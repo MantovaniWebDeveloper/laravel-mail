@@ -1,7 +1,7 @@
 header {
-  background-color: red;
   height: 70px;
   width: 100%;
+  border-bottom: 1px solid rgb(230, 230, 230);
   #contenitore_logo_menu {
     display: flex;
     height: 70px;
@@ -9,7 +9,6 @@ header {
     .wrapLogo{
       width: 30%;
       height: 100%;
-      background-color: green;
       .title {
         line-height: 70px;
         text-transform: uppercase;
@@ -18,7 +17,21 @@ header {
     .wrapMenu {
       width: 70%;
       height: 100%;
-      background-color: orange;
+      ul {
+        text-decoration: none;
+        line-height: 70px;
+        text-align: right;
+        a {
+          color: #000;
+          &:hover{
+            color: rgb(212, 213, 211);
+          }
+          li {
+            display: inline-block;
+            margin-right: 15px;
+          }
+        }
+      }
 
     }
   }
