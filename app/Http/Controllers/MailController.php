@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\lead;
+use App\Mail\SendNewLead;
 
 class MailController extends Controller
 {
@@ -23,6 +25,10 @@ class MailController extends Controller
       //salvo nella tabella leads
       $newLead->save();
 
-      return "Complimenti la mail è stata inviata con successo";
+      $avviso= "Complimenti, l'email è stata inviata con successo";
+      //messaggio statico
+      Mail::to('ratedsuperstar84@gmail.com')->send(new SendNewLead());
+
+      return view("index",compact('avviso'));
     }
 }

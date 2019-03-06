@@ -3,6 +3,14 @@
 @section('content')
 <div class="wrapForm">
   <div class="container">
+
+    @if (!empty ($avviso))
+      <div class="alert alert-success pt-2" role="alert">
+        <!--Recupero la variabile di avviso dal compact -->
+        {{ $avviso }}
+      </div>
+    @endif
+
     <form class="" action="{{route('salvaMail')}}" method="post">
       @csrf
       @method('POST')
