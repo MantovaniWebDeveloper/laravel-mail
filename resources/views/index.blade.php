@@ -1,1 +1,2 @@
-ciao sono la homepage
+@extends('layouts.app')
+@include('_partials.header')
