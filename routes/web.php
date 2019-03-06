@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::post('/salvaMail', 'MailController@saveMail')->name('salvaMail');

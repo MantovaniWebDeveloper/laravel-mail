@@ -3,7 +3,9 @@
 @section('content')
 <div class="wrapForm">
   <div class="container">
-    <form class="" action="index.html" method="post">
+    <form class="" action="{{route('salvaMail')}}" method="post">
+      @csrf
+      @method('POST')
       <div class="form-group">
         <label for="exampleInputEmail1">Nome :</label>
         <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Inserisci il tuo nome..">
