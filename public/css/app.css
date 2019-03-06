@@ -10666,3 +10666,26 @@ header {
   width: 100%;
 }
 
+header #contenitore_logo_menu {
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+
+header #contenitore_logo_menu .wrapLogo {
+  width: 30%;
+  height: 100%;
+  background-color: green;
+}
+
+header #contenitore_logo_menu .wrapLogo .title {
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+header #contenitore_logo_menu .wrapMenu {
+  width: 70%;
+  height: 100%;
+  background-color: orange;
+}
+
