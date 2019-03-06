@@ -10706,3 +10706,13 @@ header #contenitore_logo_menu .wrapMenu ul a li {
   margin-right: 15px;
 }
 
+.wrapForm {
+  height: 500px;
+  width: 100%;
+  background-color: #2ae6a2;
+}
+
+.wrapForm form {
+  padding-top: 30px;
+}
+
